@@ -25,6 +25,21 @@ public class RentalCarCalc {
         System.out.print("Enter your age.. Don't lie: ");
         int age = input.nextInt();
 
+        // basic car rental
+        double basicRental = 29.99 * rentalDays;
+
+        // options cost
+        double optionsCost = 0;
+        if (tollTag) {
+            optionsCost += 3.95 * rentalDays;
+        }
+        if (gps) {
+            optionsCost += 2.95 * rentalDays;
+        }
+        if (roadsideAssistance) {
+            optionsCost += 3.95 * rentalDays;
+        }
+
 
 
 
