@@ -13,6 +13,13 @@ public class RentalCarCalc {
         int rentalDays = input.nextInt();
         input.nextLine();
 
+        System.out.print("Electronic toll tag  ($3.95/day? (yes/no)");
+        boolean tollTag = input.nextLine() .equalsIgnoreCase("yes");
+
+        System.out.print("GPS ($2.95/day)? (yes/no): ");
+        boolean gps = input.nextLine().equalsIgnoreCase("yes");
+
+
 
 
 
