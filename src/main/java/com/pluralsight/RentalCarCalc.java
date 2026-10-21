@@ -45,6 +45,16 @@ public class RentalCarCalc {
             underSurcharge = basicRental * .30;
         }
 
+        // Total cost
+        double totalCost = basicRental + optionsCost + underSurcharge;
+
+        System.out.println();
+        System.out.println("Pick up date: " + pickupDate);
+        System.out.printf("Basic car rental: $%.2f%n", basicRental);
+        System.out.printf("Option cost: $%.2f%n", optionsCost);
+        System.out.printf("Under age driver: $%.2f%n", underSurcharge);
+        System.out.printf("Total cost: $%.2f%n", totalCost);
+
 
 
 
