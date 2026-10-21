@@ -40,6 +40,12 @@ public class RentalCarCalc {
             optionsCost += 3.95 * rentalDays;
         }
 
+        double underSurcharge = 0;
+        if (age < 25) {
+            underSurcharge = basicRental * .30;
+        }
+
+
 
 
 
